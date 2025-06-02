@@ -1,0 +1,7 @@
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\obj\Debug\Bank Of Dades - Projeto 2bimestre.csproj.AssemblyReference.cache
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\obj\Debug\Bank Of Dades - Projeto 2bimestre.csproj.CoreCompileInputs.cache
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\bin\Debug\Bank Of Dades - Projeto 2bimestre.exe.config
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\bin\Debug\Bank Of Dades - Projeto 2bimestre.exe
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\bin\Debug\Bank Of Dades - Projeto 2bimestre.pdb
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\obj\Debug\Bank Of Dades - Projeto 2bimestre.exe
+E:\ETEC\Atividades\2025\Viviani - DS\Bank Of Dades - Projeto 2bimestre\obj\Debug\Bank Of Dades - Projeto 2bimestre.pdb
