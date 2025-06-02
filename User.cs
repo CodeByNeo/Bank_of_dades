@@ -13,13 +13,14 @@ namespace Bank_Of_Dades___Projeto_2bimestre
         protected double balance;
         protected string fName;
         protected string lName;
-        protected double limit; 
+        protected double limit;
+        protected double accountNum;
 
-        protected User(string l, string p, string fn, string ln) 
+        public User(string l, string p, string fn, string ln, double b) 
         {
             login = l;
             password = p;
-            balance = 100;
+            balance = b;
             fName = fn;
             lName = ln;
             limit = 2500.00;
@@ -27,20 +28,25 @@ namespace Bank_Of_Dades___Projeto_2bimestre
 
 
         //Withdraw é sacar
-        protected void withdraw(double wdv)
+        public virtual void withdraw(double wdv)
         {
             try
             {
-                balance -= wdv;
+                balance -= (wdv*SystemParameters.defaultInterestRate)+wdv;
             }
             catch(FormatException) 
-            { 
+            {
+                Console.WriteLine("Apenas numeros permitidos, tente novamente");
                 balance = balance;
             }
-            
+            catch (ArgumentNullException)
+            {
+                Console.WriteLine("Não pode retirar nada, forneça um valor.");
+            }
+
         }
 
-        protected void deposit(double amount)
+        public virtual void deposit(double amount)
         {
             try
             {
@@ -57,14 +63,14 @@ namespace Bank_Of_Dades___Projeto_2bimestre
         }
 
 
-        protected void getBalance()
+        public virtual double getBalance()
         {
-
+            return balance;
         }
 
-        protected void systemOut()
+        public virtual void systemOut()
         {
-            
+            Environment.Exit(0);
         }
 
     }

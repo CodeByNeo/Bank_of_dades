@@ -6,18 +6,51 @@ using System.Threading.Tasks;
 
 namespace Bank_Of_Dades___Projeto_2bimestre
 {
-    using System;
-
     class Program
     {
         static void Main()
         {
-            // Variáveis
-            int acao;
-            double saldo = 0;
-            double saque;
-            double deposito;
+            bool t = true;
+            while (t)
+            {
+                Console.WriteLine("Olá, Bem vindo ao Bank Of Dades!");
+                Console.WriteLine("1- ENTRAR");
+                Console.WriteLine("2- CADASTRAR");
+                Console.WriteLine("3- SAIR");
+                int i = int.Parse(Console.ReadLine());
+                switch (i)
+                {
+                    case 1:
+                        Console.WriteLine("Digite seu login");
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        break;
+                    case 3:
+                        t=false;
+                        break;
+                    default:
+                        Console.WriteLine("Opção inválida.");
+                        continue;
+                }
+                while
 
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*
             // Código
             do
             {
@@ -45,6 +78,7 @@ namespace Bank_Of_Dades___Projeto_2bimestre
                         saque = double.Parse(Console.ReadLine());
 
                         if (saque > saldo)
+
                         {
                             Console.WriteLine("Você não tem saldo suficiente!");
                         }
@@ -95,6 +129,7 @@ namespace Bank_Of_Dades___Projeto_2bimestre
 
             Console.WriteLine("Programa encerrado.");
             Console.ReadKey();
+        */
         }
     }
 }

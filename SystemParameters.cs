@@ -8,9 +8,11 @@ namespace Bank_Of_Dades___Projeto_2bimestre
 {
     internal static class SystemParameters
     {
-        public static double defaultInterestRate = 0.10; // 5% de taxa de juros
+        public static double defaultInterestRate = 0.05; // 5% de taxa de juros
         public static string wdLimit; // limite de saque
         public static string dpLimit; // limite de depósito
+        public static string goldDpLimit;
+        public static string goldWdLimit;
         public static double defaultLoanRate = 0.10; // 10% de taxa de juros para empréstimos
         public static double defaultOverdraftLimit = 1000.00; // Limite de cheque especial
         public static double serviceCharge = 2.50; // Taxa de serviço por transação
@@ -19,6 +21,7 @@ namespace Bank_Of_Dades___Projeto_2bimestre
         public static double goldCashbackRate = 0.02; // 2% de cashback para clientes Gold
         public static double platinumCashbackRate = 0.03; // 3% de cashback para clientes Platinum
         public static string systemVersion = "1.0.0"; // Versão do sistema
+        public static bool systemStatus = true; //true= active, false= inactive
 
         public static void showVersion()
         {
